@@ -1,0 +1,11 @@
+.custom-input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.custom-input::placeholder {
+    color: rgb(110, 94, 214);
+    opacity: 1;
+    font-weight: bold;
+}
