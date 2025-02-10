@@ -1,19 +1,19 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import { CardProps } from "../../types/types";
 
-const CardCharacter: React.FC<CardProps> = ({ name, status, created }) => {
+const CardCharacter: React.FC<CardProps> = ({ character }) => {
     return (
         <>
             <Card >
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    {name}
+                    {character.name}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    {status}
+                    {character.status}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    {created}
+                    {character.created}
                 </Typography>
             </CardContent>
             </Card>
