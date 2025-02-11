@@ -3,6 +3,7 @@ import './App.css'
 import CardsList from './components/CardsList/CardsList'
 import SearchInput from './components/SearchInput/SearchInput'
 import { ApiResponse, Character } from './types/types';
+import { Typography } from '@mui/material';
 
 function App() {
   const [characters, setCharacters] = useState<Character[]>([]);
@@ -38,6 +39,11 @@ function App() {
   return (
     <>
       <SearchInput onSearch={handleSearch} />
+      {error && (
+        <Typography variant="body1" color="error" sx={{ marginTop: 2 }}>
+          {error}
+        </Typography>
+      )}
       <CardsList characters={characters} />
     </>
   )
