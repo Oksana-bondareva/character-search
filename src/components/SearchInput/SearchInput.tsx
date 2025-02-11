@@ -40,7 +40,6 @@ const SearchInput: React.FC<SearchProps> = ({ onSearch }) => {
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                width="30vw"
             >
                 <Paper
                     elevation={4}
@@ -48,7 +47,7 @@ const SearchInput: React.FC<SearchProps> = ({ onSearch }) => {
                         padding: 2,
                         width: { xs: '90%', sm: '400px' },
                         maxWidth: '400px',
-                        position: 'fixed',
+                        position: 'absolute',
                         top: 50,
                     }}
                 >

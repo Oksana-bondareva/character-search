@@ -1,0 +1,36 @@
+.cardListWrapper {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.firstRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.otherRows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .firstRow {
+        grid-template-columns: 1fr;
+    }
+
+    .otherRows {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .firstRow,
+    .otherRows {
+        grid-template-columns: 1fr;
+    }
+}

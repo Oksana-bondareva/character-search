@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css'
-import CardsList from './components/CardsWrapper/CardsList'
+import CardsList from './components/CardsList/CardsList'
 import SearchInput from './components/SearchInput/SearchInput'
 import { ApiResponse, Character } from './types/types';
 

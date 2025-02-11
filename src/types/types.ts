@@ -1,7 +1,9 @@
 export interface Character {
     name: string;
+    species: string;
     status: string;
     created: string;
+    url: string;
 }
 
 export interface CardProps {
